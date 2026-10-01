@@ -231,6 +231,10 @@
     .bar, .overview, .title-slide .hint, .ctrls, .slider { display: none !important; }
   }
 
+  /* v4.2 — احتياط الشاشات القصيرة (1280×800 / 1366×768): تصغير جسم الشريحة بدل قصّ المحتوى */
+  @media (max-height: 820px) { .slide .body { zoom: .90; } }
+  @media (max-height: 780px) { .slide .body { zoom: .81; } }
+
   .chk { list-style:none; display:grid; grid-template-columns:1fr 1fr; gap:.45rem .9rem; }
   .chk li { display:grid; grid-template-columns:2rem 1fr; gap:.6rem; align-items:center; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:.5rem .8rem; cursor:pointer; font-size:clamp(.9rem,1.5vw,1.08rem); transition:.2s; }
   .chk li i { font-style:normal; width:1.7rem; height:1.7rem; border-radius:6px; border:2px solid var(--dim); display:grid; place-items:center; color:transparent; font-weight:800; }
@@ -261,8 +265,7 @@
     <h1>دورة تشغيل وصيانة وفك وتركيب<br><span>الأجهزة الملاحية</span> على القوارب السريعة</h1>
     <p class="sub">VHF · GPS · ECHO SOUNDER · NOKIA · RADAR — الفصل الثاني: جهاز الـ GPS</p>
     <div class="team">
-      <div><b>إعداد</b>مهندس أول/ علي المتروك · مشرف/ محمد الدريع (مدرب دولي معتمد)</div>
-      <div><b>المنسقات الإداريات</b>م. أميرة سيف العجمي · منى علي العبدالرزاق</div>
+      <div><b>إعداد</b>مهندس أول/ علي المتروك</div>
     </div>
   </div>
   <div class="hint"><span><span class="kbd">← / مسافة</span> التالي</span><span><span class="kbd">→</span> السابق</span><span><span class="kbd">F</span> ملء الشاشة</span><span><span class="kbd">O</span> نظرة عامة</span><span><span class="kbd">P</span> وضع المحاضر</span><span><span class="kbd">G</span> شريحة رقم</span></div>
